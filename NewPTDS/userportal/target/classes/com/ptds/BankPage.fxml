@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="904.0" prefWidth="1640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ptds.BankPage">
+   <children>
+      <GridPane alignment="BASELINE_CENTER" prefHeight="906.0" prefWidth="1640.0" VBox.vgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="391.0" minHeight="10.0" prefHeight="143.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="828.0" minHeight="10.0" prefHeight="682.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="828.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane style="-fx-background-color: #326464;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="198.0" layoutY="24.0" prefHeight="112.0" prefWidth="1244.0" text="SASA RAILWAY PAYMENT GATEWAY " textAlignment="CENTER" textFill="#fdf8e1" textOverrun="CLIP" wrapText="true" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="198.0">
+                     <font>
+                        <Font name="RobotoMono Nerd Font Md" size="71.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="834.0" prefWidth="1640.0" style="-fx-background-color: #fdf8e1;" GridPane.rowIndex="1" GridPane.rowSpan="2">
+               <children>
+                  <SplitPane dividerPositions="0.503921568627451" layoutX="56.0" layoutY="49.0" prefHeight="672.0" prefWidth="1532.0" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="49.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #fdf8e1; -fx-border-color: #326464;" SplitPane.resizableWithParent="false">
+                           <children>
+                              <AnchorPane layoutX="47.0" layoutY="69.0" prefHeight="534.0" prefWidth="678.0" style="-fx-border-color: #326464; -fx-border-radius: 3%;" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="68.0">
+                                 <children>
+                                    <Label layoutX="93.0" layoutY="81.0" prefHeight="30.0" prefWidth="177.0" text="Application: " textFill="#326464" AnchorPane.leftAnchor="93.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="93.0" layoutY="131.0" prefHeight="41.0" prefWidth="197.0" text="Bank Name: " textFill="#326464" AnchorPane.leftAnchor="93.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="93.0" layoutY="188.0" prefHeight="41.0" prefWidth="226.0" text="IFSC Code: " textFill="#326464" AnchorPane.leftAnchor="93.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="93.0" layoutY="246.0" prefHeight="41.0" prefWidth="260.0" text="Account Name: " textFill="#326464" AnchorPane.leftAnchor="93.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="93.0" layoutY="303.0" prefHeight="41.0" prefWidth="185.0" text="Account No: " textFill="#326464" AnchorPane.leftAnchor="93.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="93.0" layoutY="364.0" prefHeight="41.0" prefWidth="224.0" text="Amount:" textFill="#326464" AnchorPane.leftAnchor="93.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="363.0" layoutY="77.0" prefHeight="38.0" prefWidth="177.0" text="RPTS" textFill="#326464" AnchorPane.leftAnchor="363.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="363.0" layoutY="119.0" prefHeight="60.0" prefWidth="269.0" text="Indian Overseas Bank" textFill="#326464" AnchorPane.leftAnchor="363.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="363.0" layoutY="181.0" prefHeight="53.0" prefWidth="226.0" text="IOBA0000020" textFill="#326464" AnchorPane.leftAnchor="363.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="363.0" layoutY="239.0" prefHeight="61.0" prefWidth="261.0" text="SASA Railways" textFill="#326464" AnchorPane.leftAnchor="363.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="363.0" layoutY="288.0" prefHeight="72.0" prefWidth="188.0" text="98766987651" textFill="#326464" AnchorPane.leftAnchor="363.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="AmountLabel" layoutX="365.0" layoutY="354.0" prefHeight="62.0" prefWidth="109.0" text="Rs. 0.00" textFill="#326464" AnchorPane.leftAnchor="364.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="71.0" layoutY="-19.0" prefHeight="38.0" prefWidth="179.0" style="-fx-background-color: #fdf8e1;" text="Payment Details" textFill="#326464">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="19.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="662.0" prefWidth="739.0" style="-fx-background-color: #fdf8e1; -fx-border-color: #326464;" SplitPane.resizableWithParent="false">
+                           <children>
+                              <AnchorPane layoutX="54.0" layoutY="75.0" prefHeight="416.0" prefWidth="652.0" style="-fx-border-color: #326464; -fx-border-radius: 3%;" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="53.0">
+                                 <children>
+                                    <Label layoutX="5.0" layoutY="71.0" prefHeight="30.0" prefWidth="293.0" text="Account Holder Name : " textFill="#326464">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="AccHolderTextField" layoutX="292.0" layoutY="65.0" prefHeight="46.0" prefWidth="363.0" promptText="Name of the account holder" style="-fx-text-fill: #326464; -fx-border-color: #326464;" AnchorPane.leftAnchor="291.0" AnchorPane.rightAnchor="25.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="4.0" layoutY="153.0" prefHeight="30.0" prefWidth="239.0" text="Account Number : " textFill="#326464">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="AccNumberTextField" layoutX="289.0" layoutY="143.0" prefHeight="46.0" prefWidth="358.0" promptText="Account number" style="-fx-text-fill: #326464; -fx-border-color: #326464;" AnchorPane.leftAnchor="288.0" AnchorPane.rightAnchor="25.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono Lt" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                    <Button fx:id="MakePayment" layoutX="407.0" layoutY="248.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="235.0" style="-fx-background-color: #326464;" text="MAKE PAYMENT" textFill="#fdf8e1" AnchorPane.rightAnchor="25.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font" size="26.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="CancelButton" layoutX="243.0" layoutY="248.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="133.0" style="-fx-background-color: red;" text="CANCEL" textFill="#fdf8e1" AnchorPane.rightAnchor="283.0" AnchorPane.topAnchor="248.0">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font" size="26.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="80.0" layoutY="-27.0" prefHeight="54.0" prefWidth="143.0" style="-fx-background-color: #fdf8e1;" text="User Details" textFill="#326464">
+                                       <font>
+                                          <Font name="RobotoMono Nerd Font Mono" size="19.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

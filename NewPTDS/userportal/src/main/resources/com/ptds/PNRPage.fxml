@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" fillWidth="false" prefHeight="904.0" prefWidth="1640.0" style="-fx-background-color: #004b23; -fx-border-color: transparent; -fx-background-size: cover;" styleClass="pnr" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ptds.PNRPage">
+   <children>
+      <BorderPane prefHeight="553.0" prefWidth="586.0" style="-fx-background-color: transparent;" VBox.vgrow="NEVER">
+         <center>
+               <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1152.0" style="-fx-background-radius: 3%; -fx-background-color: rgba(50, 100, 100, 0.7);" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="SubmitButton" layoutX="470.0" layoutY="529.0" mnemonicParsing="false" onAction="#ValidatePNRNumber" prefHeight="63.0" prefWidth="232.0" style="-fx-background-color: #fdf8e1;" text="CONTINUE" textFill="#010522" AnchorPane.leftAnchor="470.0" AnchorPane.rightAnchor="469.0">
+                     <font>
+                        <Font name="RobotoMono Nerd Font Mono" size="30.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="19.0" layoutY="-7.0" prefHeight="166.0" prefWidth="1161.0" text="PNR VERIFICATION" textFill="#fdf8e1" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="-28.0" AnchorPane.topAnchor="-7.0">
+                     <font>
+                        <Font name="RobotoMono Nerd Font Mono Md" size="81.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Label>
+                  <Label id="message" fx:id="message" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="463.0" prefHeight="39.0" prefWidth="516.0" textFill="#2d6472" />
+                  <Label alignment="CENTER" layoutX="48.0" layoutY="273.0" prefHeight="71.0" prefWidth="1103.0" text="Enter PNR number*" textAlignment="CENTER" textFill="#fdf8e1">
+                     <font>
+                        <Font name="RobotoMono Nerd Font" size="56.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="PNRField" alignment="CENTER" layoutX="203.0" layoutY="405.0" prefHeight="56.0" prefWidth="747.0" promptText="Enter PNR Number ( 10 digits )" style="-fx-background-color: transparent; -fx-border-color: #fdf8e1; -fx-border-radius: 3%; -fx-text-fill: #fdf8e1;">
+                     <font>
+                        <Font name="RobotoMono Nerd Font" size="25.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></TextField>
+                  <Label layoutX="554.0" layoutY="731.0" prefHeight="69.0" prefWidth="571.0" text="* Issued to the passenger whom you are accompanying " textFill="#f0fff1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="BackButton" layoutX="66.0" layoutY="56.0" minHeight="32.0" minWidth="32.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="40.0" style="-fx-background-color: #fdf8e1; -fx-background-radius: 100%;" styleClass="BackButton" stylesheets="@styles.css" />
+                  <Label fx:id="Invalid" alignment="CENTER" layoutX="371.0" layoutY="215.0" prefHeight="31.0" prefWidth="457.0" style="-fx-background-color: #fdf8e1; -fx-background-radius: 15; -fx-border-color: red; -fx-border-radius: 15;" text="Invalid PNR Number !!!" textFill="#e10e0e" visible="false">
+                     <font>
+                        <Font size="21.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

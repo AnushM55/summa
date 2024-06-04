@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="EntireVBOX" alignment="CENTER" prefHeight="1044.0" prefWidth="1920.0" style="-fx-background-color: #004b23; -fx-border-color: transparent; -fx-background-size: cover;" styleClass="guest" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ptds.GuestPage">
+   <children>
+      <BorderPane prefHeight="553.0" prefWidth="586.0" style="-fx-background-color: transparent;">
+         <center>
+               <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1146.0" style="-fx-background-radius: 3%; -fx-background-color: rgba(1, 118, 100, 0.98);" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" layoutX="65.0" layoutY="-6.0" prefHeight="166.0" prefWidth="1161.0" text="ENTER GUEST DETAILS" textFill="#fdf8e1" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="-6.0">
+                     <font>
+                        <Font name="RobotoMono Nerd Font Mono Lt" size="81.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="48.0" layoutY="273.0" prefHeight="71.0" prefWidth="1051.0" textAlignment="CENTER" textFill="#fdf8e1">
+                     <font>
+                        <Font name="RobotoMono Nerd Font" size="56.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="BackButton" layoutX="38.0" layoutY="56.0" minHeight="32.0" minWidth="32.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="40.0" style="-fx-background-color: #fdf8e1; -fx-background-radius: 100%;" styleClass="BackButton" stylesheets="@styles.css" />
+                  <Pane layoutX="88.0" layoutY="159.0" prefHeight="590.0" prefWidth="1004.0" style="-fx-background-color: rgba(0, 0, 0, 0.15); -fx-background-radius: 5%;">
+                     <children>
+                        <Button fx:id="AddGuestButton" layoutX="876.0" layoutY="53.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #fdf8e1; -fx-background-radius: 100%;" styleClass="AddButton" stylesheets="@styles.css" />
+                        <TextField fx:id="NameField" alignment="CENTER" layoutX="35.0" layoutY="48.0" prefHeight="46.0" prefWidth="322.0" promptText="Enter Name of guest" style="-fx-background-radius: 4%; -fx-border-radius: 4%; -fx-background-color: transparent; -fx-border-color: #fdf8e1; -fx-text-fill: #fdf8e1;">
+                           <font>
+                              <Font name="RobotoMono Nerd Font Lt" size="22.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="NumberField" alignment="CENTER" layoutX="372.0" layoutY="47.0" prefHeight="46.0" prefWidth="319.0" promptText="Enter Phone Number" style="-fx-background-radius: 4%; -fx-border-radius: 4%; -fx-background-color: transparent; -fx-border-color: #fdf8e1; -fx-text-fill: #fdf8e1;">
+                           <font>
+                              <Font name="RobotoMono Nerd Font Lt" size="22.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="ProceedButton" layoutX="941.0" layoutY="52.0" minHeight="32.0" minWidth="32.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="38.0" rotate="180.0" style="-fx-background-color: #fdf8e1; -fx-background-radius: 100%;" styleClass="BackButton" stylesheets="@styles.css" />
+                        <ScrollPane fx:id="scrollpane" blendMode="SRC_ATOP" depthTest="DISABLE" hbarPolicy="NEVER" layoutX="35.0" layoutY="131.0" maxHeight="420.0" maxWidth="1000.0" style="-fx-border-radius: 15%;">
+                          <content>
+                              <GridPane fx:id="AllGuestDisplayPane" prefHeight="615.0" prefWidth="915.0" style="-fx-background-color: rgba(25,49,49,1);">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <FlowPane fx:id="GuestDetailsPane" prefHeight="48.0" prefWidth="915.0" visible="false" GridPane.rowIndex="5">
+                                       <children>
+                                          <TextField fx:id="GuestNameField" alignment="CENTER" prefHeight="46.0" prefWidth="405.0" style="-fx-background-radius: 4%; -fx-border-radius: 4%; -fx-background-color: transparent; -fx-border-color: #fdf8e1; -fx-text-fill: #fdf8e1;">
+                                             <font>
+                                                <Font name="RobotoMono Nerd Font Lt" size="22.0" />
+                                             </font>
+                                          </TextField>
+                                          <Separator fx:id="seperator" opacity="0.0" orientation="VERTICAL" prefHeight="46.0" prefWidth="24.0" />
+                                          <TextField fx:id="GuestNumberField" alignment="CENTER" prefHeight="46.0" prefWidth="405.0" style="-fx-background-radius: 4%; -fx-border-radius: 4%; -fx-background-color: transparent; -fx-border-color: #fdf8e1; -fx-text-fill: #fdf8e1;">
+                                             <font>
+                                                <Font name="RobotoMono Nerd Font Lt" size="22.0" />
+                                             </font>
+                                          </TextField>
+                                          <Separator fx:id="seperator2" opacity="0.0" orientation="VERTICAL" prefHeight="46.0" prefWidth="24.0" />
+                                          <Button fx:id="CancelButton" minHeight="34.0" minWidth="34.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: #fdf8e1; -fx-background-radius: 100%;" styleClass="DeleteButton" stylesheets="@styles.css" />
+                                       </children>
+                                    </FlowPane>
+                                 </children>
+                              </GridPane>
+                          </content>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ScrollPane>
+                        <TextField fx:id="CostField" editable="false" layoutX="707.0" layoutY="47.0" prefHeight="46.0" prefWidth="157.0" style="-fx-background-radius: 4%; -fx-border-radius: 4%; -fx-background-color: transparent; -fx-border-color: #fdf8e1; -fx-text-fill: #fdf8e1;" text="Rs: ">
+                           <font>
+                              <Font name="RobotoMono Nerd Font Lt" size="22.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

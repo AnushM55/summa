@@ -1,0 +1,27 @@
+.body {
+  -fx-background-image :url(tuvvur.jpg);
+  -fx-background-repeat : no-repeat; 
+      
+}
+.pnr {
+  -fx-background-image : url(Nilambur.jpg);
+  -fx-background-repeat : no-repeat; 
+}
+.guest { 
+  -fx-background-image : url(RandomStation.jpg);
+  -fx-background-repeat : no-repeat; 
+
+}
+.BackButton{
+  -fx-graphic : url(BackButton3.png);
+  -fx-background-radius : 5%;
+}
+.AddButton { 
+  -fx-graphic : url(AddButton.png);
+}
+.ProceedButton { 
+  -fx-graphic : url(ProceedButton.png);
+}
+.DeleteButton { 
+  -fx-graphic : url(CancelButton.png);
+}
